@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>GitHub Social Preview generator</title>
+	<link rel="icon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+	<style>
+
+	:root {
+		--font-sans: system-ui, sans-serif;
+		--font-serif: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+	}
+
+	body {
+		font-family: var(--font-sans);
+		background: #fafafa;
+		color: #000;
+	}
+
+	h1 {
+		font-family: var(--font-serif);
+	}
+
+	.social-preview {
+		box-sizing: border-box;
+
+		/* GitHub recommends 1280x640 for best display and leaving a 40pt border (actually in the template image is 60pt) around the important details of your social card to make sure nothing gets cropped. */
+		max-width: 1280px;
+		height: 640px;
+		padding: 60pt;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		background: #fff;
+		border: 1px solid #ccc;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>GitHub Social Preview generator</h1>
+
+	<div class="social-preview">
+		<div class="name" contenteditable="true">Project name (click to edit)</div>
+
+		<div class="description"contenteditable="true">Project description (click to edit)</div>
+	</div>
+
+	<footer>
+		<ul>
+			<li>License: MIT</li>
+			<li>GitHub repo: <a href="https://github.com/fibo/github-social-preview-generator">fibo/github-social-preview-generator</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
